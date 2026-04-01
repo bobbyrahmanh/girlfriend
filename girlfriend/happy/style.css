@@ -1,0 +1,227 @@
+@import url("https://fonts.googleapis.com/css2?family=Zeyada&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap");
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: #fddcd8;
+  background-position: center center;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: column;
+}
+
+.perintah {
+  position: fixed;
+  top: 0px;
+  left: 50%;
+  width: 90%;
+  height: 82px;
+  transform: translateX(-50%);
+  background-color: #481c48;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+  box-sizing: border-box;
+  font-family: "Caveat", cursive;
+  font-size: 30px;
+  color: white;
+  z-index: 9999;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  border-radius: 0 0 18px 18px;
+  transition: width 0.3s ease, top 0.3s ease, border-radius 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.perintah.scroll-middle {
+  top: 20px;
+  border-radius: 15px;
+  width: 90%;
+  transform: translate(-50%);
+  transition: top 0.5s ease, transform 0.5s ease;
+}
+
+.nav-left {
+  flex: 1;
+  text-align: left;
+}
+
+.nama {
+  font-family: "Caveat", cursive;
+  font-size: 28px;
+  text-align: center;
+  line-height: 25px;
+  color: #ffffff;
+}
+
+.nav-right {
+  flex: 1;
+  text-align: right;
+}
+
+.logo {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#confettiBtn {
+  width: 30px;
+  height: 30px;
+  background: rgb(255, 255, 255);
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+#confettiBtn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+}
+
+#confettiBtn:active {
+  transform: scale(0.95);
+}
+
+.home-btn {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 30px;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: transform 0.3s ease;
+}
+
+.home-btn:hover i {
+  transform: scale(1.2);
+}
+
+.paper {
+  background-image: url("https://gimgs2.nohat.cc/thumb/f/640/pink-grid-pattern-background-cute-free-photo-rawpixel--comrawpixel8562197.jpg");
+  background-size: 500px;
+  background-position: center center;
+  padding: 20px 100px;
+  /*  min-width: 800px; */
+
+  transform: rotateZ(-5deg);
+  box-shadow: 1px 15px 20px 0px rgba(0, 0, 0, 0.5);
+
+  position: absolute;
+    cursor: grabbing;
+}
+
+.paper.heart {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  padding: 0;
+  border-radius: 50%;
+}
+
+.paper.image {
+  padding: 10px;
+}
+.paper.image p {
+  font-size: 30px;
+}
+
+img {
+  max-height: 200px;
+  width: 100%;
+  user-select: none;
+}
+
+.paper.heart::after {
+  content: "";
+  background-image: url("https://cdn.pixabay.com/photo/2016/03/31/19/25/cartoon-1294994__340.png");
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-size: 150px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  opacity: 0.6;
+}
+
+p {
+  font-family: "Zeyada";
+  font-size: 50px;
+  color: rgb(0, 0, 0);
+  opacity: 0.75;
+  user-select: none;
+
+  filter: drop-shadow(2px 1.5px 1px rgba(0, 0, 0, 0.9));
+}
+
+.love-you {
+  font-family: "Caveat";
+  position: absolute;
+}
+
+.btn-page {
+  padding: 27.5px 12px;
+  background: radial-gradient(circle, #ff7878 0%, #ad0000 100%);
+  color: #ffffff;
+  font-family: "Caveat", cursive;
+  font-size: 1.5rem;
+  border-radius: 500px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border : 4px ridge rgb(158, 158, 158);
+    position: absolute;
+}
+
+.btn-page:hover {
+  transform: scale(1.1);
+}
+
+  .overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background: rgba(0, 0, 0, 0.6);
+      display: none;
+      justify-content: center;
+      align-items: center;
+      z-index: 99999;
+    }
+
+    .popup {
+      background: white;
+      padding: 30px 40px;
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+      font-size: 20px;
+      color: #333;
+      text-align: center;
+      position: relative;
+    }
+
+    .popup button {
+      margin-top: 20px;
+      padding: 8px 16px;
+      background-color: #ff5e7e;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    .popup button:hover {
+      background-color: #ff3e62;
+    }
